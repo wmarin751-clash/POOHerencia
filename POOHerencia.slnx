@@ -1,1 +1,3 @@
-<Solution />
+<Solution>
+  <Project Path="Backend2POO/Backend2POO.csproj" />
+</Solution>

@@ -1,0 +1,36 @@
+﻿
+
+using Backend2POO;
+
+namespace Herency01;
+
+public class Kite : Rhombus
+{
+    private double _b;
+
+    //properties
+    public double B
+    {
+        get => _b;
+        set => _b = ValidateB(value);
+    }
+
+    // Constructors
+    public Kite(string name, double a, double d1, double d2, double b) : base(name, a, d1, d2)
+    {
+        B = b;
+    }
+
+    // Methods
+    public override double GetArea() => base.GetArea();
+
+    public override double GetPerimeter() => 2 * (A + B);
+    private double ValidateB(double b)
+    {
+        if (b < 0)
+        {
+            throw new ArgumentException("The kite area is incorrect");
+        }
+        return b;
+    }
+}
