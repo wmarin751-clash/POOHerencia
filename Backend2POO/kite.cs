@@ -1,8 +1,6 @@
 ﻿
 
-using Backend2POO;
-
-namespace Herency01;
+namespace Backend2POO;
 
 public class Kite : Rhombus
 {
@@ -28,7 +26,7 @@ public class Kite : Rhombus
     public override double GetPerimeter() => 2 * (A + B);
     private double ValidateB(double b)
     {
-        if (b < 0)
+        if (b <= 0)
         {
             throw new ArgumentException("The kite area is incorrect");
         }

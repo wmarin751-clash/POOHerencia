@@ -2,7 +2,7 @@
 
 namespace Backend2POO;
 
-internal class Triangle : Rectangle
+public class Triangle : Rectangle
 {
     //fields
     private double _c;
@@ -10,12 +10,14 @@ internal class Triangle : Rectangle
 
 
 
-
     //constructors
-    public Triangle(string name, double a) : base(name, a)
+    public Triangle(string name, double a, double b, double c, double h) : base(name, a, b)
     {
-        _c = a;
+        C = c;
+        H = h;
     }
+   
+
 
     //properties    
 
@@ -31,12 +33,12 @@ internal class Triangle : Rectangle
 
     //methods
 
-    public override double GetArea() => (A * H) / 2;
+    public override double GetArea() => (B * H) / 2;
     public override double GetPerimeter() => A + B + C;
 
     private double ValidateC(double c)
     {
-        if (c < 0)
+        if (c <= 0)
         {
             throw new ArgumentException("The side C of the triangle is incorrect.");
         }
@@ -45,7 +47,7 @@ internal class Triangle : Rectangle
 
     private double ValidateH(double h)
     {
-        if (h < 0)
+        if (h <= 0)
         {
             throw new ArgumentException("The height of the triangle is incorrect.");
         }

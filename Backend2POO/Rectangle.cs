@@ -1,19 +1,18 @@
 ﻿
 
-using Herency01;
 
 namespace Backend2POO;
 
-internal class Rectangle : Square
+public class Rectangle : Square
 {
 
     // fields
     private double _b;
 
     //Constructors 
-    public Rectangle(string name, double a) : base(name, a)
+    public Rectangle(string name, double a, double b) : base(name, a)
     {
-        B = B;
+        B = b;
     }
 
     //Properties
@@ -30,7 +29,7 @@ internal class Rectangle : Square
 
     private double ValidateB(double b)
     {
-        if (b < 0)
+        if (b <= 0)
         {
             throw new ArgumentException("The area of the rectangle is incorrect.");
         }

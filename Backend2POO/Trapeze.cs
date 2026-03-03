@@ -1,20 +1,20 @@
 ﻿
 namespace Backend2POO;
 
-internal class Trapeze : Triangle
+public class Trapeze : Triangle
 {
 
     //fields
     private double _d;
 
 
-
-    //constructors  
-    public Trapeze(string name, double a) : base(name, a)
+    //constructors 
+    public Trapeze(string name, double a, double b, double c, double h, double d) : base(name, a, b, c, h)
     {
-        _d = a;
+        D = d;
     }
 
+    
 
     //properties    
     public double D

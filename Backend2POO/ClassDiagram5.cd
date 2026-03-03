@@ -56,11 +56,12 @@
       <FileName>Triangle.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Herency01.Kite">
+  <Class Name="Backend2POO.Kite">
     <Position X="9.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACAAAAAAAAAIAAAAAAAAAEAAAAAEAEAAAA=</HashCode>
-      <FileName>kite.cs</FileName>
+      <FileName>Kite.cs</FileName>
+      <NewMemberFileName>kite.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9.75" />

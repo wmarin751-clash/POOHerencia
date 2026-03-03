@@ -19,6 +19,7 @@ public class Square : GeometricFigure
     public Square(string name, double a) : base (name )
     {
         A = a;
+        Name = name;    
     }
 
     //Methods

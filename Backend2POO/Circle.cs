@@ -11,12 +11,12 @@ public class Circle: GeometricFigure
     public Circle(string name, double r) : base(name)   
     {
         R = r;
+        Name = name;
     }
     // Properties 
     public double R
     {     get => _r;
           set => _r = ValidateR(value);
-
     }
 
 

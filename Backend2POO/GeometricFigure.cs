@@ -1,5 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-
+﻿
 namespace Backend2POO;
 
 public abstract class GeometricFigure
@@ -8,7 +7,7 @@ public abstract class GeometricFigure
     //Constructor
     protected GeometricFigure(string name )
     {
-        name = name.ToLower();
+       Name = name;
     }
 
 

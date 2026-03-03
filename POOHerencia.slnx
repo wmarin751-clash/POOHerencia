@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="Backend2POO/Backend2POO.csproj" />
+  <Project Path="Frontend2POO/Frontend2POO.csproj" Id="1d3813c8-4933-4b3b-9967-2a03d4811adc" />
 </Solution>
