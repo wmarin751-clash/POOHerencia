@@ -6,6 +6,7 @@ namespace Herency01;
 
 public class Kite : Rhombus
 {
+    //Fields
     private double _b;
 
     //properties
